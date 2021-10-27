@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rdf:RDF [
+   <!ENTITY humans   "http://www.inria.fr/2015/humans"> 
+   <!ENTITY xsd      "http://www.w3.org/2001/XMLSchema#"> ]>
+
+
+
+<rdf:RDF
+   xmlns:rdf ="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:st  ="http://ns.inria.fr/sparql-template/"
+   xmlns:xsd ="&xsd;"
+   xmlns     ="&humans;#"
+   xml:base  ="&humans;-instances" >
+
+<Woman rdf:ID="Alice">
+	<hasFriend rdf:resource="#John"/>
+	<name>Alice</name>
+</Woman>
+<Woman rdf:ID="AliceGraph2">
+	<hasFriend rdf:resource="#John"/>
+	<name>graph2</name>
+</Woman>
+<Man rdf:ID="Jack">
+	<hasFriend rdf:resource="#Alice"/>
+	<hasChild rdf:resource="#Harry"/>
+	<name>Jack</name>
+</Man>
+
+<Woman rdf:ID="Flora">
+  <age rdf:datatype="&xsd;integer" >95</age>
+	<hasSpouse rdf:resource="#Gaston"/>
+	<hasChild rdf:resource="#Pierre"/>
+	<name>Flora</name>
+</Woman>
+
+<Person rdf:ID="Laura">
+	<hasFriend rdf:resource="#Alice"/>
+	<name>Laura</name>
+</Person>
+
+<Woman rdf:ID="Jennifer">
+	<hasSpouse rdf:resource="#John"/>
+	<name>Jennifer</name>
+</Woman>
+
+</rdf:RDF>

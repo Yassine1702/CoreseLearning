@@ -1,0 +1,7 @@
+<section itemscope itemtype=’http://data-vocabulary.org/Person’>
+<span itemprop= ‘name’>John Doe </span>
+<span itemprop=’title’>graduate research assitant</span>
+<span itemprop=”affiliation”>University of Dreams</span>
+<section itemscope itemprop=”adress” itemtype=”http://data-vocabulary.org/Address”> …
+</section>
+</section>
